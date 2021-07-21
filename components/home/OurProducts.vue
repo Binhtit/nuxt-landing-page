@@ -2,7 +2,7 @@
   <div class="ourproducts-wrap row">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-12">
           <p class="ourproducts_subtitle text-danger text-uppercase">
             bplay game
           </p>
@@ -10,7 +10,7 @@
             our products
           </p>
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-12">
           <p class="ourproducts_content text-white">
             BPlay’s high quality iGaming Platform offers a complete solution for
             your casino. Get the full White Label turnkey solution or the
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="products-wrap row">
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -37,13 +37,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -58,13 +58,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -79,13 +79,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -100,13 +100,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -121,13 +121,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -142,13 +142,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -163,13 +163,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -184,13 +184,13 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -205,7 +205,7 @@
                   alt=""
                 />
               </div>
-              <p class="card-text text-white text-center mt-2">
+              <p class="card-text text-white text-center mt-4">
                 Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
               </p>
             </div>
@@ -220,7 +220,7 @@
 .ourproducts-wrap {
   background: url('~assets/images/ourproducts_background.png');
   background-size: 100% 100%;
-  padding: 225px 0 300px 0;
+  padding: 300px 0;
   margin-top: -55px;
   .ourproducts_subtitle {
     font-family: 'Raleway', sans-serif;
@@ -243,11 +243,13 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
+    letter-spacing: 1px
   }
   .products-wrap {
-    margin-top: 80px;
+    margin-top: 15px;
     .card {
       background: none;
+      margin-top: 70px;
       .product-title {
         position: relative;
         display: flex;

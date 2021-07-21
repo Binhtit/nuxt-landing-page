@@ -44,7 +44,7 @@
         </div>
         <div class="_bar-stack">
           <div class="_barstack navbar-toggler">
-            <img src="~/assets/images/icons/bar_stack.svg" alt="" />
+            <img src="~/assets/images/icons/landing/bar_stack.svg" alt="" />
           </div>
         </div>
       </div>

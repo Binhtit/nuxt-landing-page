@@ -29,10 +29,10 @@
     <div class="aboutus_experience col-12 p-0">
       <div class="container position-relative">
         <div class="experience_content">
-          <p class="_year-num text-danger text-center">15</p>
-          <p class="_year-text text-uppercase text-center text-white">years</p>
+          <p class="_year-num text-danger text-center m-0">15</p>
+          <p class="_year-text text-uppercase text-center text-white m-0">years</p>
           <div class="line-red mx-auto"></div>
-          <p class="_description text-center text-white pb-4">
+          <p class="_description text-center text-white pb-3">
             of experience<br />in the <span class="text-danger">iGaming</span>
           </p>
         </div>

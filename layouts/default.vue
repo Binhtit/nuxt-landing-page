@@ -1,12 +1,13 @@
 <template>
-    <div class="container-fluid landing-wrap">
+  <div class="container-fluid landing-wrap">
     <CommonHeader />
-      <Nuxt />
-    </div>
+    <Nuxt />
+    <CommonFooter />
+  </div>
 </template>
 
 <style lang="scss">
-  .landing-wrap{
-    background: var(--mainBackground);
-  }
+.landing-wrap {
+  background: var(--mainBackground);
+}
 </style>
