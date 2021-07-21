@@ -1,0 +1,8 @@
+<template>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="" alt="">
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</template>
