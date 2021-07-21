@@ -219,8 +219,8 @@
 <style lang="scss">
 .ourproducts-wrap {
   background: url('~assets/images/ourproducts_background.png');
-  background-size: cover;
-  padding-top: 225px;
+  background-size: 100% 100%;
+  padding: 225px 0 300px 0;
   margin-top: -55px;
   .ourproducts_subtitle {
     font-family: 'Raleway', sans-serif;
