@@ -1,14 +1,18 @@
 <template>
-  <div id="products" class="ourproducts-wrap row">
+  <div
+    id="products"
+    class="ourproducts-wrap row"
+    :class="{ _mobile: $device.isMobile }"
+  >
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12">
           <p class="ourproducts_subtitle text-danger text-uppercase">
             bplay game
           </p>
-          <p class="ourproducts_title text-white text-uppercase">
+          <h2 class="ourproducts_title text-white text-uppercase">
             our products
-          </p>
+          </h2>
         </div>
         <div class="col-lg-8 col-md-12">
           <p class="ourproducts_content text-white">
@@ -21,7 +25,7 @@
           </p>
         </div>
       </div>
-      <div class="products-wrap row">
+      <div v-if="!$device.isMobile" class="products-wrap row">
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
@@ -221,9 +225,100 @@
           </div>
         </div>
       </div>
+      <VueSlickCarousel v-else v-bind="settings" class="products-wrap row">
+        <div class="product-card">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="~/assets/images/products/product_1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <div class="product-title mt-2">
+                <h5 class="card-title text-white m-0">Card title</h5>
+                <img
+                  class="_bg-title"
+                  src="~/assets/images/ourproducts_background_titlecard.png"
+                  alt=""
+                />
+              </div>
+              <p class="card-text text-white text-center mt-4">
+                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="~/assets/images/products/product_1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <div class="product-title mt-2">
+                <h5 class="card-title text-white m-0">Card title</h5>
+                <img
+                  class="_bg-title"
+                  src="~/assets/images/ourproducts_background_titlecard.png"
+                  alt=""
+                />
+              </div>
+              <p class="card-text text-white text-center mt-4">
+                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="~/assets/images/products/product_1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <div class="product-title mt-2">
+                <h5 class="card-title text-white m-0">Card title</h5>
+                <img
+                  class="_bg-title"
+                  src="~/assets/images/ourproducts_background_titlecard.png"
+                  alt=""
+                />
+              </div>
+              <p class="card-text text-white text-center mt-4">
+                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
+              </p>
+            </div>
+          </div>
+        </div>
+      </VueSlickCarousel>
     </div>
   </div>
 </template>
+
+<script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
+export default {
+  components: { VueSlickCarousel },
+  data() {
+    return {
+      settings: {
+        dots: true,
+        infinite: true,
+        centerPadding: '20px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+      },
+    }
+  },
+}
+</script> 
 
 <style lang="scss" scoped>
 .ourproducts-wrap {
@@ -261,6 +356,7 @@
     .card {
       background: none;
       margin-top: 70px;
+      border: none;
       .product-title {
         position: relative;
         display: flex;
@@ -284,8 +380,72 @@
       }
     }
   }
+
+  // --layoutmobile--
+  &._mobile {
+    padding-top: 120px;
+    background: url('~assets/images/ourproducts_background.png');
+    background-size: 100% 100%;
+    margin-top: -35px;
+    .ourproducts {
+      &_subtitle {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 5px;
+        text-align: center;
+      }
+      &_title {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      &_content {
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+      }
+    }
+    .products-wrap {
+      margin-top: 15px;
+      .card {
+        padding-left: 15px;
+        background: none;
+        border: none;
+        margin-top: 0;
+        .product-title {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0 !important;
+          .card-title {
+            position: absolute;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+        .card-text {
+          font-family: 'Mulish', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 26px;
+          margin-top: 10px !important;
+        }
+      }
+    }
+  }
 }
 
+.slick-dots {
+  background: red !important;
+}
 @media screen and (max-width: 1199px) {
   .ourproducts-wrap {
     .products-wrap {
@@ -318,6 +478,27 @@
           }
           ._bg-title {
             width: 200px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .ourproducts-wrap {
+    padding: 100px 0;
+    .products-wrap {
+      .card {
+        width: 200px;
+        .product-title {
+          .card-title {
+            font-size: 20px;
+            line-height: 25px;
+          }
+          ._bg-title {
+            width: 150px;
             height: auto;
           }
         }

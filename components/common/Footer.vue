@@ -1,15 +1,31 @@
 <template>
-  <div class="footer-wrap row">
+  <div class="footer-wrap row pb-0" :class="{ _mobile: $device.isMobile }">
     <div class="container">
-      <div class="row _line">
-        <div class="_footerimg col-lg-6 col-md-12">
-          <img src="~/assets/images/footer/license.png" alt="" />
-          <img src="~/assets/images/footer/sabs.png" alt="" />
-          <img src="~/assets/images/footer/curacao.png" alt="" />
-          <img src="~/assets/images/footer/itech.png" alt="" />
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <p class="_copyright text-right text-white">
+      <div class="row _line pb-0">
+        <div class="_footerimg col-12">
+          <div class="_image">
+            <div class="_license-img">
+              <img src="~/assets/images/footer/license.png" alt="" />
+            </div>
+            <div class="_group-img">
+              <img
+                class="_subimg"
+                src="~/assets/images/footer/sabs.png"
+                alt=""
+              />
+              <img
+                class="_subimg"
+                src="~/assets/images/footer/curacao.png"
+                alt=""
+              />
+              <img
+                class="_subimg"
+                src="~/assets/images/footer/itech.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="_copyright text-right">
             Copyright © 2020 bplay.com. All rights reserved.
           </p>
         </div>
@@ -17,6 +33,10 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {}
+</script>
 
 <style lang="scss">
 .footer-wrap {
@@ -28,25 +48,81 @@
     padding-bottom: 32px;
   }
   ._copyright {
+    color: #cecece;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
   }
+  ._footerimg {
+    display: flex;
+    justify-content: space-between;
+    ._image {
+      display: flex;
+      & :not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  // --layoutmobile--
+  &._mobile {
+    padding-top: 32px;
+    ._footerimg {
+      display: block;
+      ._license-img {
+        order: 2;
+        width: 145px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+      }
+      ._group-img {
+        order: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+    ._copyright {
+      padding-top: 42px;
+      font-size: 12px;
+      line-height: 28px;
+    }
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .footer-wrap {
     ._footerimg {
       display: block;
       margin: 0 auto;
-      & :not(:first-child) {
-        margin-right: 20px;
-      }
     }
     ._copyright {
       text-align: center !important;
+    }
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .footer-wrap {
+    ._footerimg {
+      display: block;
+      margin: 0 auto;
+      ._image {
+        display: block;
+        ._license-img {
+          display: flex;
+          justify-content: center;
+        }
+        ._group-img {
+          display: flex;
+          justify-content: center;
+        }
+      }
     }
   }
 }

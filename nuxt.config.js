@@ -34,7 +34,6 @@ export default {
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
     },
-    middleware: 'checkMobile'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -53,6 +52,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/device',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

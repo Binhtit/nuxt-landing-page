@@ -1,5 +1,5 @@
 <template>
-  <div class="scrolltop-wrap">
+  <div class="scrolltop-wrap _smooth" :class="{ 'd-none': !isScroll }">
     <img
       class="_iconimg"
       src="~/assets/images/icons/landing/scroll_top.svg"
@@ -9,14 +9,37 @@
   </div>
 </template>
 
+<script>
+export default {
+  props: {
+    isScroll: {
+      type: Boolean || String,
+      default() {
+        return false
+      },
+    },
+  },
+}
+</script>
+
 <style lang="scss">
+@keyframes animated-scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) translate(-50%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translate(-50%, -50%);
+  }
+}
 .scrolltop-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
   z-index: 1;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   right: 30px;
   bottom: 30px;
   cursor: pointer;
@@ -29,6 +52,11 @@
     text-align: center;
     letter-spacing: 1px;
   }
+}
+
+._smooth {
+  animation: animated-scroll 1.2s ease;
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {

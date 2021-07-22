@@ -1,5 +1,9 @@
 <template>
-  <div id="aboutus" class="aboutus-wrap row">
+  <div
+    id="aboutus"
+    class="aboutus-wrap row"
+    :class="{ _mobile: $device.isMobile }"
+  >
     <div class="aboutus_banner col-12 p-0">
       <div class="_title size-full">
         <div class="banner_content text-uppercase">casino<br />playgame</div>
@@ -12,23 +16,31 @@
       <AtomScrollDown />
     </div>
     <div class="aboutus_intro col-12 p-0">
-      <div class="container intro__content">
-        <div class="_sub-title_red text-center text-uppercase">bplay game</div>
-        <div class="_sub-title_white mt-2 text-center text-uppercase">
-          who we are?
+      <div class="container">
+        <div class="row intro__content">
+          <div class="_sub-title_red col-12 text-center text-uppercase">
+            bplay game
+          </div>
+          <div class="_sub-title_white col-12 mt-2 text-center text-uppercase">
+            who we are?
+          </div>
+          <div class="col-12 _sub-content mx-auto">
+            BPlay was founded in 2015 by a group of highly skilled professionals
+            with over 15 years of experience in the iGaming industry. Today we
+            are an international company with more than 100 employees and have
+            operations in Malta, Ukraine, Romania, Norway, India, Myanmar and
+            Taiwan...
+          </div>
+          <img
+            class="col-12 w-full"
+            src="~/assets/images/aboutus_map.png"
+            alt=""
+          />
         </div>
-        <div class="_sub-content mx-auto">
-          BPlay was founded in 2015 by a group of highly skilled professionals
-          with over 15 years of experience in the iGaming industry. Today we are
-          an international company with more than 100 employees and have
-          operations in Malta, Ukraine, Romania, Norway, India, Myanmar and
-          Taiwan...
-        </div>
-        <img class="w-full" src="~/assets/images/aboutus_map.png" alt="" />
       </div>
     </div>
     <div class="aboutus_experience col-12 p-0">
-      <div class="container position-relative">
+      <div class="aboutus_experience_mb container position-relative">
         <div class="experience_content">
           <p class="_year_num text-danger text-center m-0">15</p>
           <p class="_year_text text-uppercase text-center text-white m-0">
@@ -41,8 +53,14 @@
         </div>
       </div>
       <img
+        v-if="!$device.isMobile"
         class="_banner w-full"
         src="~/assets/images/aboutus_banner_landscape.png"
+        alt=""
+      />
+      <img v-else
+        class="_banner w-full"
+        src="~/assets/images/aboutus_banner_landscape_mobile.png"
         alt=""
       />
     </div>
@@ -160,6 +178,61 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+
+  // --layoutmobile--
+  &._mobile {
+    .aboutus_banner {
+      ._title {
+        .banner_content {
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 42px;
+          letter-spacing: 5px;
+        }
+      }
+      ._banner {
+        height: 50vh;
+        object-fit: cover;
+      }
+    }
+    .aboutus_intro {
+      margin-top: 85px;
+      .intro__content {
+        ._sub-title {
+          &_red {
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 5px;
+          }
+          &_white {
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 1px;
+          }
+        }
+        ._sub-content {
+          font-size: 16px;
+          line-height: 32px;
+          margin-top: 24px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .aboutus_experience {
+      &_mb {
+        position: relative;
+      }
+      .experience_content {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 130px;
+        padding-top: 30px;
+          padding-bottom: 48px !important;
+      }
     }
   }
 }

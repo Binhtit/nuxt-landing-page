@@ -5,5 +5,6 @@ export default function(ctx) {
     } else {
         userAgent = navigator.userAgent;
     }
+    console.log(userAgent);
     ctx.isMobile = !!/mobile/i.test(userAgent)
 }

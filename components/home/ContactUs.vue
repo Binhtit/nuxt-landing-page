@@ -1,16 +1,20 @@
 <template>
-  <div id="contactus" class="contactus-wrap row">
+  <div
+    id="contactus"
+    class="contactus-wrap row"
+    :class="{ _mobile: $device.isMobile }"
+  >
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <img class="_logo" src="/logo.svg" alt="" />
         </div>
         <div class="col-lg-6 col-md-12">
-          <p class="_title text-white text-uppercase">contact us</p>
+          <h2 class="_title text-white text-uppercase">contact us</h2>
           <div class="d-flex">
             <div class="pt-2 mr-3">
               <img
-                class="mr-2"
+                class="_address_icon mr-2"
                 src="~/assets/images/icons/landing/place.svg"
                 alt=""
               />
@@ -22,7 +26,7 @@
           <div class="d-flex">
             <div class="pt-1 mr-3">
               <img
-                class="mr-2"
+                class="_email_icon mr-2"
                 src="~/assets/images/icons/landing/mail.svg"
                 alt=""
               />
@@ -31,7 +35,7 @@
           </div>
         </div>
       </div>
-    <CommonFooter />
+      <CommonFooter />
     </div>
   </div>
 </template>
@@ -65,6 +69,62 @@
     font-weight: normal;
     font-size: 28px;
     line-height: 146.28%;
+  }
+  // --layoutmobile--
+  &._mobile {
+    padding-top: 150px;
+    ._logo {
+      width: 118px;
+      height: auto;
+    }
+    ._title {
+      padding-top: 40px;
+      margin-bottom: 24px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    ._address {
+      font-size: 16px;
+      line-height: 146.28%;
+      &_icon {
+        width: 14px;
+        height: auto;
+        margin-right: 0 !important;
+      }
+    }
+    ._email {
+      font-size: 16px;
+      line-height: 146.28%;
+      &_icon {
+        width: 17px;
+        height: auto;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactus-wrap {
+    ._logo {
+      width: 110px;
+    }
+    ._title {
+      font-size: 20px;
+    }
+    ._address {
+      font-size: 16px;
+      &_icon {
+        font-size: 15px;
+      }
+    }
+    ._email {
+      font-size: 16px;
+    }
+    &_icon {
+      font-size: 15px;
+    }
   }
 }
 </style>

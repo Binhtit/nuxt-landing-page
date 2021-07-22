@@ -1,33 +1,54 @@
 <template>
-  <nav class="header-wrap row navbar navbar-expand-lg">
+  <nav
+    class="header-wrap row navbar navbar-expand-lg"
+    :class="{ _mobile: $device.isMobile }"
+  >
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand" href="#">
-        <img src="/logo.svg" alt="" />
+        <img class="_logo" src="/logo.svg" alt="" />
       </a>
 
       <div class="navlink-wrap">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#aboutus'}">about us</nuxt-link>
+            <nuxt-link
+              class="nav-link _navheader"
+              :to="{ path: '/', hash: '#aboutus' }"
+              >about us</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#products'}">products</nuxt-link>
+            <nuxt-link
+              class="nav-link _navheader"
+              :to="{ path: '/', hash: '#products' }"
+              >products</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#partners'}">partners</nuxt-link>
+            <nuxt-link
+              class="nav-link _navheader"
+              :to="{ path: '/', hash: '#partners' }"
+              >partners</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#ourclient'}"
+            <nuxt-link
+              class="nav-link _navheader"
+              :to="{ path: '/', hash: '#ourclient' }"
               >out clients</nuxt-link
             >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#contactus'}">contact us</nuxt-link>
+            <nuxt-link
+              class="nav-link _navheader"
+              :to="{ path: '/', hash: '#contactus' }"
+              >contact us</nuxt-link
+            >
           </li>
         </ul>
       </div>
       <div class="nav-item dropdown">
-        <div class="_lang">
+        <div>
           <button class="dropdown-toggle text-white">
             <img
               class="mr-2"
@@ -49,18 +70,18 @@
         </div>
       </div>
     </div>
-    
-          <div class="_blur"></div>
+
+    <div class="_blur"></div>
   </nav>
 </template>
 
 <style lang="scss">
 .header-wrap {
   font-family: 'Raleway', sans-serif;
-  background: var(--mainBackground);
+  background: var(--blurBackground);
   position: fixed;
   top: 0;
-  left: 0;
+  left: 15px;
   width: 100%;
   z-index: 1;
   .navlink-wrap {
@@ -74,7 +95,7 @@
         font-weight: 700;
         padding: 11px 0;
         text-transform: uppercase;
-        border-bottom: var(--mainBackground) 2px solid;
+        border-bottom: var(--blurBackground) 2px solid;
         &:hover {
           border-bottom: #8b1212 2px solid;
         }
@@ -88,8 +109,7 @@
     display: flex;
     align-items: center;
     margin-left: 16px;
-    ._lang {
-      .dropdown-toggle {
+    .dropdown-toggle {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -117,23 +137,40 @@
         }
       }
     }
-
-    }
     ._bar-stack {
       margin-left: 28px;
-     
     }
-    
   }
-   ._blur {
-     display: none;
-        background: #1a1c25;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
+  ._blur {
+    display: none;
+    background: #1a1c25;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  // --layoutmobile--
+  &._mobile {
+    ._logo {
+      width: 90px;
+      height: auto;
+    }
+    .dropdown {
+      .dropdown-toggle {
+        width: 95px;
+        height: 36px;
+        ._lang{
+          font-size: 14px;
+          font-weight: 600;
+          margin: 0;
+        }
       }
+      ._bar-stack {
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1500px) {

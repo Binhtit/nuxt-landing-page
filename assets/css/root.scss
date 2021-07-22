@@ -1,5 +1,6 @@
 body {
     .landing-wrap {
+        
         a {
             text-decoration: none;
             &:hover {
@@ -92,8 +93,13 @@ body {
     }
 }
 
+.main-bg {
+    background: var(--mainBackground);
+}
+
 :root {
     --mainBackground: #15161e;
+    --blurBackground: #15161ec9;
     --linkColor: #fff;
     --componentbackground: #313534;
     --white: #fff;
