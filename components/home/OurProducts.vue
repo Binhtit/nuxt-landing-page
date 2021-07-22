@@ -1,5 +1,5 @@
 <template>
-  <div class="ourproducts-wrap row">
+  <div id="products" class="ourproducts-wrap row">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12">
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="products-wrap row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -33,6 +33,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -43,7 +44,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -54,6 +55,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -64,7 +66,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -75,6 +77,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -85,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -96,6 +99,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -106,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -117,6 +121,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -127,7 +132,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -138,6 +143,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -148,7 +154,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -159,6 +165,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -169,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -180,6 +187,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -190,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
@@ -201,6 +209,7 @@
               <div class="product-title mt-2">
                 <h5 class="card-title text-white m-0">Card title</h5>
                 <img
+                  class="_bg-title"
                   src="~/assets/images/ourproducts_background_titlecard.png"
                   alt=""
                 />
@@ -216,34 +225,36 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .ourproducts-wrap {
   background: url('~assets/images/ourproducts_background.png');
   background-size: 100% 100%;
   padding: 300px 0;
   margin-top: -55px;
-  .ourproducts_subtitle {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 10px;
-  }
-  .ourproducts_title {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .ourproducts_content {
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 1px
+  .ourproducts {
+    &_subtitle {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 10px;
+    }
+    &_title {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    &_content {
+      font-family: 'Mulish', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 1px;
+    }
   }
   .products-wrap {
     margin-top: 15px;
@@ -270,6 +281,46 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ourproducts-wrap {
+    .products-wrap {
+      .card {
+        .product-title {
+          .card-title {
+            font-size: 25px;
+            line-height: 35px;
+          }
+          ._bg-title {
+            width: 250px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ourproducts-wrap {
+    padding: 150px 0;
+    .products-wrap {
+      .card {
+        width: 252px;
+        .product-title {
+          .card-title {
+            font-size: 25px;
+            line-height: 35px;
+          }
+          ._bg-title {
+            width: 200px;
+            height: auto;
+          }
+        }
       }
     }
   }

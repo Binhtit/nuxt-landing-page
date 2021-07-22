@@ -8,21 +8,21 @@
       <div class="navlink-wrap">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <nuxt-link class="nav-link _navheader" to="#">about us</nuxt-link>
+            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#aboutus'}">about us</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" to="#">products</nuxt-link>
+            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#products'}">products</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" to="#">partners</nuxt-link>
+            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#partners'}">partners</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" to="#"
+            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#ourclient'}"
               >out clients</nuxt-link
             >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link _navheader" to="#">contact us</nuxt-link>
+            <nuxt-link class="nav-link _navheader" :to="{ path: '/',hash:'#contactus'}">contact us</nuxt-link>
           </li>
         </ul>
       </div>
@@ -58,6 +58,11 @@
 .header-wrap {
   font-family: 'Raleway', sans-serif;
   background: var(--mainBackground);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   .navlink-wrap {
     display: flex;
     max-width: 715px;

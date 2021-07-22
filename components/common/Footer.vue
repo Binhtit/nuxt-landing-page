@@ -2,8 +2,11 @@
   <div class="footer-wrap row">
     <div class="container">
       <div class="row _line">
-        <div class="col-lg-6 col-md-12">
-          <img src="~/assets/images/footer/Group company.png" alt="" />
+        <div class="_footerimg col-lg-6 col-md-12">
+          <img src="~/assets/images/footer/license.png" alt="" />
+          <img src="~/assets/images/footer/sabs.png" alt="" />
+          <img src="~/assets/images/footer/curacao.png" alt="" />
+          <img src="~/assets/images/footer/itech.png" alt="" />
         </div>
         <div class="col-lg-6 col-md-12">
           <p class="_copyright text-right text-white">
@@ -30,6 +33,21 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-wrap {
+    ._footerimg {
+      display: block;
+      margin: 0 auto;
+      & :not(:first-child) {
+        margin-right: 20px;
+      }
+    }
+    ._copyright {
+      text-align: center !important;
+    }
   }
 }
 </style>
