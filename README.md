@@ -4,15 +4,15 @@
 ## --OVER VIEW--
 ### -- Desktop layout --
 
-![view desktop](https://i.ibb.co/XZr4cZW/ezgif-7-e116415616d9.gif)
+![view desktop: https://i.ibb.co/XZr4cZW/ezgif-7-e116415616d9.gif](https://i.ibb.co/XZr4cZW/ezgif-7-e116415616d9.gif)
 
 ### -- Mobile layout --
 
-![view mobile](https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif)
+![Mobile: https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif](https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif)
 
 ### -- Switch to mobile --
 
-![how to view mobile](https://i.ibb.co/zxw8nD5/ezgif-7-14e3bdc0401f.gif)
+![how to view mobile: https://i.ibb.co/zxw8nD5/ezgif-7-14e3bdc0401f.gif](https://i.ibb.co/zxw8nD5/ezgif-7-14e3bdc0401f.gif)
 
 
 ## Build Setup
