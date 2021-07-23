@@ -8,7 +8,7 @@
 
 ### -- Mobile layout --
 
-![Mobile: https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif](https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif)
+![Mobile: https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif](https://i.ibb.co/SVQqZcs/99.gif)
 
 ### -- Switch to mobile --
 
