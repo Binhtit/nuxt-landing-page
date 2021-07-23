@@ -13,7 +13,9 @@
         src="~/assets/images/aboutus_banner.png"
         alt=""
       />
-      <AtomScrollDown />
+      <div  @click.stop="$emit('scrollDown', componentSecond)">
+      <AtomScrollDown/>
+      </div>
     </div>
     <div class="aboutus_intro col-12 p-0">
       <div class="container">
@@ -66,6 +68,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    navlinks: {
+      type: Array || Object,
+      default() {},
+    },
+  },
+  computed: {
+    componentSecond() {
+      if (!this.navlinks) return false
+      return this.navlinks[1].hash
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .aboutus-wrap {

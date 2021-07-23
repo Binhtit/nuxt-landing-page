@@ -32,8 +32,11 @@ export default {
           behavior: 'smooth'
         })
       }
-      return window.scrollTo({ top: 0, behavior: 'smooth' })
+      // return window.scrollTo({ top: 0, behavior: 'smooth' })
     },
+    linkExactActiveClass: '_active',
+    // linkActiveClass: '_active',
+    middleware: ['i18n']
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -41,6 +44,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    'plugins/i18n.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

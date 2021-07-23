@@ -26,271 +26,17 @@
         </div>
       </div>
       <div v-if="!$device.isMobile" class="products-wrap row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
+        <div
+          v-for="(product, id) in products"
+          :key="id"
+          class="col-lg-4 col-md-6 col-sm-6"
+        >
+          <AtomProduct :product="product" />
         </div>
       </div>
-      <VueSlickCarousel v-else v-bind="settings" class="products-wrap row">
-        <div class="product-card">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="~/assets/images/products/product_1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <div class="product-title mt-2">
-                <h5 class="card-title text-white m-0">Card title</h5>
-                <img
-                  class="_bg-title"
-                  src="~/assets/images/ourproducts_background_titlecard.png"
-                  alt=""
-                />
-              </div>
-              <p class="card-text text-white text-center mt-4">
-                Vivo LiveCasino, HoGaming Live Casino, BPlay LiveCasino
-              </p>
-            </div>
-          </div>
+      <VueSlickCarousel v-else :arrows="false" v-bind="settings" class="products-wrap row">
+        <div v-for="(product, id) in products" :key="id" class="product-card">
+          <AtomProduct :product="product" />
         </div>
       </VueSlickCarousel>
     </div>
@@ -305,6 +51,12 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   components: { VueSlickCarousel },
+  props: {
+    products: {
+      type: Array || Object,
+      default() {},
+    },
+  },
   data() {
     return {
       settings: {
@@ -320,7 +72,7 @@ export default {
 }
 </script> 
 
-<style lang="scss" scoped>
+<style lang="scss">
 .ourproducts-wrap {
   background: url('~assets/images/ourproducts_background.png');
   background-size: 100% 100%;
@@ -411,41 +163,51 @@ export default {
     .products-wrap {
       margin-top: 15px;
       .card {
+        width: 253px;
         padding-left: 15px;
         background: none;
         border: none;
         margin-top: 0;
-        .product-title {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 0 !important;
-          .card-title {
-            position: absolute;
-            font-family: 'Raleway', sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            line-height: 35px;
+        .card-body {
+          .product-title {
+            ._bg-title {
+              width: 210px;
+              height: auto;
+            }
+            .card-title {
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 19px;
+              text-align: center;
+              letter-spacing: 1px;
+            }
+          }
+          .card-text {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            margin-top: 10px !important;
           }
         }
-        .card-text {
-          font-family: 'Mulish', sans-serif;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 26px;
-          margin-top: 10px !important;
+      }
+    }
+    .slick-slider {
+      .slick-dots {
+        bottom: -35px;
+        li {
+          button {
+            &::before {
+              font-size: 12px;
+              color: red !important;
+            }
+          }
         }
       }
     }
   }
 }
 
-.slick-dots {
-  background: red !important;
-}
 @media screen and (max-width: 1199px) {
   .ourproducts-wrap {
     .products-wrap {

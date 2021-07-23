@@ -1,5 +1,9 @@
 <template>
-  <div class="scrolltop-wrap _smooth" :class="{ 'd-none': !isScroll }">
+  <div
+    class="scrolltop-wrap _smooth"
+    :class="{ 'd-none': !isScroll }"
+    @click="$emit('scrollTop', componentFirst)"
+  >
     <img
       class="_iconimg"
       src="~/assets/images/icons/landing/scroll_top.svg"
@@ -17,6 +21,16 @@ export default {
       default() {
         return false
       },
+    },
+    navlinks: {
+      type: Array || Object,
+      default() {},
+    },
+  },
+  computed: {
+    componentFirst() {
+      if (!this.navlinks) return false
+      return this.navlinks[0].hash
     },
   },
 }

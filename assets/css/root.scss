@@ -75,6 +75,22 @@ body {
             }
         }
     }
+    
+    ._mobile {
+        .row {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+        &.row {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+        &.container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    
     //   SCROLL-dark 
     &::-webkit-scrollbar {
         width: 12px;

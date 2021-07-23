@@ -1,12 +1,13 @@
 <template>
-  <div
-    class="scrolldown-wrap"
-    @click="$emit('toggle-value')"
-  >
+  <div class="scrolldown-wrap">
     <div class="position-relative">
       <div class="_text text-white">Scroll</div>
       <div class="_icon mt-1">
-        <img class="_iconimg" src="~/assets/images/icons/landing/scroll_down.svg" alt="" />
+        <img
+          class="_iconimg"
+          src="~/assets/images/icons/landing/scroll_down.svg"
+          alt=""
+        />
       </div>
     </div>
   </div>
@@ -30,7 +31,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(5px);
   }
 }
 

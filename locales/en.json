@@ -1,0 +1,12 @@
+{
+  "home": {
+    "lang": "eng"
+  },
+  "navlinks": {
+    "aboutus": "about us",
+    "products": "products",
+    "partners": "partners",
+    "ourclient": "our clients",
+    "contactus": "contact us"
+  }
+}
