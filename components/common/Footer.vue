@@ -71,20 +71,25 @@ export default {}
     padding-top: 32px;
     ._footerimg {
       display: block;
-      ._license-img {
-        order: 2;
-        width: 145px;
-        height: auto;
+      ._image {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        padding-top: 25px;
-      }
-      ._group-img {
-        order: 1;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        ._license-img {
+          order: 2;
+          width: 145px;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 25px;
+        }
+        ._group-img {
+          order: 1;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
       }
     }
     ._copyright {
