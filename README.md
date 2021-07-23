@@ -1,17 +1,18 @@
 <h1 align="center">NUXT LANDING PAGE</h1>
-<span align="center">------------------------------------</span>
+<h2 align="center"> ------------------------------------ </h2>
 
-##--OVER VIEW--
+## --OVER VIEW--
 ### -- Desktop layout --
 
-https://i.ibb.co/XZr4cZW/ezgif-7-e116415616d9.gif
+![view desktop](https://i.ibb.co/XZr4cZW/ezgif-7-e116415616d9.gif)
 
 ### -- Mobile layout --
-https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif
+
+![view mobile](https://i.ibb.co/V250JDW/ezgif-7-d8c36c91d345.gif)
 
 ### -- Switch to mobile --
 
-![view mobile](https://i.ibb.co/vzq1jZr/header.png)
+![how to view mobile](https://i.ibb.co/zxw8nD5/ezgif-7-14e3bdc0401f.gif)
 
 
 ## Build Setup
